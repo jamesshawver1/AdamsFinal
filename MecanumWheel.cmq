@@ -41,7 +41,7 @@ defaults attributes  &
    inheritance = bottom_up  &
    icon_visibility = on  &
    grid_visibility = off  &
-   size_of_icons = 1.968503937  &
+   size_of_icons = 0.25  &
    spacing_for_grid = 39.3700787402
 !
 !------------------------------ Adams/View Model ------------------------------!
@@ -105,56 +105,6 @@ part create rigid_body mass_properties  &
 part attributes  &
    part_name = .MecanumWheel.ground  &
    name_visibility = off
-!
-!---------------------------------- Wheel10 -----------------------------------!
-!
-!
-defaults coordinate_system  &
-   default_coordinate_system = .MecanumWheel.ground
-!
-part create rigid_body name_and_position  &
-   part_name = .MecanumWheel.Wheel10  &
-   adams_id = 2  &
-   location = 0.0, 0.0, 0.0  &
-   orientation = 0.0d, 0.0d, 0.0d
-!
-defaults coordinate_system  &
-   default_coordinate_system = .MecanumWheel.Wheel10
-!
-! ****** Markers for current part ******
-!
-marker create  &
-   marker_name = .MecanumWheel.Wheel10.PSMAR  &
-   adams_id = 1  &
-   location = 0.0, 0.0, 0.0  &
-   orientation = 0.0d, 0.0d, 0.0d
-!
-marker attributes  &
-   marker_name = .MecanumWheel.Wheel10.PSMAR  &
-   visibility = off
-!
-marker create  &
-   marker_name = .MecanumWheel.Wheel10.cm  &
-   adams_id = 2  &
-   location = 0.0, 0.5, 0.0  &
-   orientation = -4.9728955845E-011d, -45.0d, -7.0327363798E-011d
-!
-marker create  &
-   marker_name = .MecanumWheel.Wheel10.MARKER_26  &
-   adams_id = 26  &
-   location = 0.0, 0.5, 0.0  &
-   orientation = -180.0d, 45.0d, 180.0d
-!
-part create rigid_body mass_properties  &
-   part_name = .MecanumWheel.Wheel10  &
-   material_type = .MecanumWheel.rubber_belt
-!
-! ****** Graphics for current part ******
-!
-part attributes  &
-   part_name = .MecanumWheel.Wheel10  &
-   color = BLACK
-!
 !----------------------------------- Wheel9 -----------------------------------!
 !
 !
@@ -188,6 +138,12 @@ marker create  &
    location = 0.3213938202, 0.3830222084, -1.94341779E-008  &
    orientation = 147.2675927879d, 32.7977513317d, -17.7523449623d
 !
+marker create  &
+   marker_name = .MecanumWheel.Wheel9.MARKER_41  &
+   adams_id = 41  &
+   location = 0.3213938202, 0.3830222084, -1.94341779E-008  &
+   orientation = -32.7324072096d, -32.7977513311d, -19.197203615d
+!
 part create rigid_body mass_properties  &
    part_name = .MecanumWheel.Wheel9  &
    material_type = .MecanumWheel.rubber_belt
@@ -196,8 +152,7 @@ part create rigid_body mass_properties  &
 !
 part attributes  &
    part_name = .MecanumWheel.Wheel9  &
-   color = BLACK  &
-   visibility = off
+   color = BLACK
 !
 !----------------------------------- Wheel8 -----------------------------------!
 !
@@ -232,6 +187,12 @@ marker create  &
    location = 0.4924038712, 8.6824135111E-002, 4.7872891129E-008  &
    orientation = 135.4385485921d, 7.053022105d, -78.0399154126d
 !
+marker create  &
+   marker_name = .MecanumWheel.Wheel8.MARKER_39  &
+   adams_id = 39  &
+   location = 0.4924038712, 8.6824135111E-002, 4.7872891129E-008  &
+   orientation = -44.5614514132d, -7.0530221303d, -6.8948660551d
+!
 part create rigid_body mass_properties  &
    part_name = .MecanumWheel.Wheel8  &
    material_type = .MecanumWheel.rubber_belt
@@ -240,8 +201,7 @@ part create rigid_body mass_properties  &
 !
 part attributes  &
    part_name = .MecanumWheel.Wheel8  &
-   color = BLACK  &
-   visibility = off
+   color = BLACK
 !
 !----------------------------------- Wheel7 -----------------------------------!
 !
@@ -276,6 +236,12 @@ marker create  &
    location = 0.4330126714, -0.2500000486, -5.5032104367E-008  &
    orientation = -40.8933946568d, 20.7048110815d, -75.0294464476d
 !
+marker create  &
+   marker_name = .MecanumWheel.Wheel7.MARKER_37  &
+   adams_id = 37  &
+   location = 0.4330126714, -0.2500000486, -5.5032104367E-008  &
+   orientation = -40.8933946491d, 20.7048110546d, 0.0d
+!
 part create rigid_body mass_properties  &
    part_name = .MecanumWheel.Wheel7  &
    material_type = .MecanumWheel.rubber_belt
@@ -284,8 +250,7 @@ part create rigid_body mass_properties  &
 !
 part attributes  &
    part_name = .MecanumWheel.Wheel7  &
-   color = BLACK  &
-   visibility = off
+   color = BLACK
 !
 !----------------------------------- Wheel6 -----------------------------------!
 !
@@ -320,6 +285,12 @@ marker create  &
    location = 0.1710101372, -0.4698462785, 7.4849104073E-008  &
    orientation = -18.8817213389d, 41.6411432014d, 39.4758711648d
 !
+marker create  &
+   marker_name = .MecanumWheel.Wheel6.MARKER_35  &
+   adams_id = 35  &
+   location = 0.1710101372, -0.4698462785, 7.4849104073E-008  &
+   orientation = -18.8817212309d, 41.6411432679d, 12.8035584319d
+!
 part create rigid_body mass_properties  &
    part_name = .MecanumWheel.Wheel6  &
    material_type = .MecanumWheel.rubber_belt
@@ -328,8 +299,7 @@ part create rigid_body mass_properties  &
 !
 part attributes  &
    part_name = .MecanumWheel.Wheel6  &
-   color = BLACK  &
-   visibility = off
+   color = BLACK
 !
 !----------------------------------- Wheel5 -----------------------------------!
 !
@@ -364,6 +334,12 @@ marker create  &
    location = -0.1710101372, -0.4698462785, -7.4849159144E-008  &
    orientation = 18.881721339d, 41.6411432014d, -39.4832679729d
 !
+marker create  &
+   marker_name = .MecanumWheel.Wheel5.MARKER_33  &
+   adams_id = 33  &
+   location = -0.1710101372, -0.4698462785, -7.4849159144E-008  &
+   orientation = 20.0356276252d, 44.9935100294d, -14.4579461522d
+!
 part create rigid_body mass_properties  &
    part_name = .MecanumWheel.Wheel5  &
    material_type = .MecanumWheel.rubber_belt
@@ -372,8 +348,7 @@ part create rigid_body mass_properties  &
 !
 part attributes  &
    part_name = .MecanumWheel.Wheel5  &
-   color = BLACK  &
-   visibility = off
+   color = BLACK
 !
 !----------------------------------- Wheel4 -----------------------------------!
 !
@@ -408,6 +383,12 @@ marker create  &
    location = -0.4330126714, -0.2500000486, 5.5032053576E-008  &
    orientation = -139.1066053432d, -20.7048110814d, -74.9891414108d
 !
+marker create  &
+   marker_name = .MecanumWheel.Wheel4.MARKER_31  &
+   adams_id = 31  &
+   location = -0.4330126714, -0.2500000486, 5.5032053576E-008  &
+   orientation = 40.8933946491d, 20.7048110546d, 0.0d
+!
 part create rigid_body mass_properties  &
    part_name = .MecanumWheel.Wheel4  &
    material_type = .MecanumWheel.rubber_belt
@@ -416,8 +397,7 @@ part create rigid_body mass_properties  &
 !
 part attributes  &
    part_name = .MecanumWheel.Wheel4  &
-   color = BLACK  &
-   visibility = off
+   color = BLACK
 !
 !----------------------------------- Wheel3 -----------------------------------!
 !
@@ -517,6 +497,56 @@ part attributes  &
    part_name = .MecanumWheel.Wheel2  &
    color = BLACK
 !
+!---------------------------------- Wheel1 -----------------------------------!
+!
+!
+defaults coordinate_system  &
+   default_coordinate_system = .MecanumWheel.ground
+!
+part create rigid_body name_and_position  &
+   part_name = .MecanumWheel.Wheel1  &
+   adams_id = 2  &
+   location = 0.0, 0.0, 0.0  &
+   orientation = 0.0d, 0.0d, 0.0d
+!
+defaults coordinate_system  &
+   default_coordinate_system = .MecanumWheel.Wheel1
+!
+! ****** Markers for current part ******
+!
+marker create  &
+   marker_name = .MecanumWheel.Wheel1.PSMAR  &
+   adams_id = 1  &
+   location = 0.0, 0.0, 0.0  &
+   orientation = 0.0d, 0.0d, 0.0d
+!
+marker attributes  &
+   marker_name = .MecanumWheel.Wheel1.PSMAR  &
+   visibility = off
+!
+marker create  &
+   marker_name = .MecanumWheel.Wheel1.cm  &
+   adams_id = 2  &
+   location = 0.0, 0.5, 0.0  &
+   orientation = -4.9728955845E-011d, -45.0d, -7.0327363798E-011d
+!
+marker create  &
+   marker_name = .MecanumWheel.Wheel1.MARKER_26  &
+   adams_id = 26  &
+   location = 0.0, 0.5, 0.0  &
+   orientation = -180.0d, 45.0d, 180.0d
+!
+part create rigid_body mass_properties  &
+   part_name = .MecanumWheel.Wheel1  &
+   material_type = .MecanumWheel.rubber_belt
+!
+! ****** Graphics for current part ******
+!
+part attributes  &
+   part_name = .MecanumWheel.Wheel1  &
+   color = BLACK
+!
+!
 !--------------------------------- MainWheel ----------------------------------!
 !
 !
@@ -578,6 +608,42 @@ marker create  &
    location = -0.4924038712, 8.6824135111E-002, -4.7872935516E-008  &
    orientation = 45.4385479813d, -7.0526003023d, -179.9183869919d
 !
+marker create  &
+   marker_name = .MecanumWheel.MainWheel.MARKER_32  &
+   adams_id = 32  &
+   location = -0.4330126714, -0.2500000486, 5.5032053576E-008  &
+   orientation = 40.8933946491d, 20.7048110546d, 0.0d
+!
+marker create  &
+   marker_name = .MecanumWheel.MainWheel.MARKER_34  &
+   adams_id = 34  &
+   location = -0.1710101372, -0.4698462785, -7.4849159144E-008  &
+   orientation = 20.0356276252d, 44.9935100294d, -14.4579461522d
+!
+marker create  &
+   marker_name = .MecanumWheel.MainWheel.MARKER_36  &
+   adams_id = 36  &
+   location = 0.1710101372, -0.4698462785, 7.4849104073E-008  &
+   orientation = -18.8817212309d, 41.6411432679d, 12.8035584319d
+!
+marker create  &
+   marker_name = .MecanumWheel.MainWheel.MARKER_38  &
+   adams_id = 38  &
+   location = 0.4330126714, -0.2500000486, -5.5032104367E-008  &
+   orientation = -40.8933946491d, 20.7048110546d, 0.0d
+!
+marker create  &
+   marker_name = .MecanumWheel.MainWheel.MARKER_40  &
+   adams_id = 40  &
+   location = 0.4924038712, 8.6824135111E-002, 4.7872891129E-008  &
+   orientation = -44.5614514132d, -7.0530221303d, -6.8948660551d
+!
+marker create  &
+   marker_name = .MecanumWheel.MainWheel.MARKER_42  &
+   adams_id = 42  &
+   location = 0.3213938202, 0.3830222084, -1.94341779E-008  &
+   orientation = -32.7324072096d, -32.7977513311d, -19.197203615d
+!
 part create rigid_body mass_properties  &
    part_name = .MecanumWheel.MainWheel  &
    material_type = .MecanumWheel.aluminum
@@ -595,7 +661,7 @@ file parasolid read  &
    model_name = .MecanumWheel
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel10.SOLID1  &
+   geometry_name = .MecanumWheel.Wheel1.SOLID1  &
    color = NO_COLOR
 !
 geometry attributes  &
@@ -638,13 +704,13 @@ geometry attributes  &
 !
 !
 constraint create joint revolute  &
-   joint_name = .MecanumWheel.Main2Wheel10  &
+   joint_name = .MecanumWheel.Main2Wheel1  &
    adams_id = 3  &
    i_marker_name = .MecanumWheel.MainWheel.MARKER_25  &
-   j_marker_name = .MecanumWheel.Wheel10.MARKER_26
+   j_marker_name = .MecanumWheel.Wheel1.MARKER_26
 !
 constraint attributes  &
-   constraint_name = .MecanumWheel.Main2Wheel10  &
+   constraint_name = .MecanumWheel.Main2Wheel1  &
    visibility = off  &
    name_visibility = off
 !
@@ -671,13 +737,80 @@ constraint attributes  &
    name_visibility = off
 !
 constraint create joint revolute  &
-   joint_name = .MecanumWheel.JOINT_5  &
+   joint_name = .MecanumWheel.Main2Wheel3  &
    adams_id = 5  &
    i_marker_name = .MecanumWheel.Wheel3.MARKER_29  &
    j_marker_name = .MecanumWheel.MainWheel.MARKER_30
 !
 constraint attributes  &
-   constraint_name = .MecanumWheel.JOINT_5  &
+   constraint_name = .MecanumWheel.Main2Wheel3  &
+   visibility = off  &
+   name_visibility = off
+!
+constraint create joint revolute  &
+   joint_name = .MecanumWheel.Main2Wheel4  &
+   adams_id = 6  &
+   i_marker_name = .MecanumWheel.Wheel4.MARKER_31  &
+   j_marker_name = .MecanumWheel.MainWheel.MARKER_32
+!
+constraint attributes  &
+   constraint_name = .MecanumWheel.Main2Wheel4  &
+   visibility = off  &
+   name_visibility = off
+!
+constraint create joint revolute  &
+   joint_name = .MecanumWheel.Main2Wheel5  &
+   adams_id = 7  &
+   i_marker_name = .MecanumWheel.Wheel5.MARKER_33  &
+   j_marker_name = .MecanumWheel.MainWheel.MARKER_34
+!
+constraint attributes  &
+   constraint_name = .MecanumWheel.Main2Wheel5  &
+   visibility = off  &
+   name_visibility = off
+!
+constraint create joint revolute  &
+   joint_name = .MecanumWheel.Main2Wheel6  &
+   adams_id = 8  &
+   i_marker_name = .MecanumWheel.Wheel6.MARKER_35  &
+   j_marker_name = .MecanumWheel.MainWheel.MARKER_36
+!
+constraint attributes  &
+   constraint_name = .MecanumWheel.Main2Wheel6  &
+   visibility = off  &
+   name_visibility = off
+!
+constraint create joint revolute  &
+   joint_name = .MecanumWheel.Main2Wheel7  &
+   adams_id = 9  &
+   i_marker_name = .MecanumWheel.Wheel7.MARKER_37  &
+   j_marker_name = .MecanumWheel.MainWheel.MARKER_38
+!
+constraint attributes  &
+   constraint_name = .MecanumWheel.Main2Wheel7  &
+   visibility = off  &
+   name_visibility = off
+!
+constraint create joint revolute  &
+   joint_name = .MecanumWheel.Main2Wheel8  &
+   adams_id = 10  &
+   i_marker_name = .MecanumWheel.Wheel8.MARKER_39  &
+   j_marker_name = .MecanumWheel.MainWheel.MARKER_40
+!
+constraint attributes  &
+   constraint_name = .MecanumWheel.Main2Wheel8  &
+   visibility = off  &
+   name_visibility = off
+!
+constraint create joint revolute  &
+   joint_name = .MecanumWheel.Main2Wheel9  &
+   adams_id = 11  &
+   i_marker_name = .MecanumWheel.Wheel9.MARKER_41  &
+   j_marker_name = .MecanumWheel.MainWheel.MARKER_42
+!
+constraint attributes  &
+   constraint_name = .MecanumWheel.Main2Wheel9  &
+   visibility = off  &
    name_visibility = off
 !
 !----------------------------------- Forces -----------------------------------!
@@ -689,7 +822,7 @@ constraint attributes  &
 simulation script create  &
    sim_script_name = .MecanumWheel.Last_Sim  &
    commands =   &
-              "simulation single_run transient type=auto_select initial_static=no end_time=2.0 number_of_steps=500 model_name=.MecanumWheel"
+              "simulation single_run transient type=auto_select initial_static=no end_time=4.0 number_of_steps=500 model_name=.MecanumWheel"
 !
 !---------------------------------- Accgrav -----------------------------------!
 !
@@ -733,10 +866,10 @@ material modify  &
    density = (1.1(kg/meter**3))
 !
 marker modify  &
-   marker_name = .MecanumWheel.Wheel10.MARKER_26  &
+   marker_name = .MecanumWheel.Wheel1.MARKER_26  &
    location =   &
-      (LOC_RELATIVE_TO({0.0, 0.0, 0.0}, .MecanumWheel.Wheel10.cm))  &
-   relative_to = .MecanumWheel.Wheel10
+      (LOC_RELATIVE_TO({0.0, 0.0, 0.0}, .MecanumWheel.Wheel1.cm))  &
+   relative_to = .MecanumWheel.Wheel1
 !
 defaults coordinate_system  &
    default_coordinate_system = .MecanumWheel.ground
@@ -749,7 +882,7 @@ part modify rigid_body name_and_position  &
 marker modify  &
    marker_name = .MecanumWheel.MainWheel.MARKER_25  &
    location =   &
-      (LOC_RELATIVE_TO({0.0, 0.0, 0.0}, .MecanumWheel.Wheel10.cm))  &
+      (LOC_RELATIVE_TO({0.0, 0.0, 0.0}, .MecanumWheel.Wheel1.cm))  &
    relative_to = .MecanumWheel.MainWheel
 !
 defaults coordinate_system  &

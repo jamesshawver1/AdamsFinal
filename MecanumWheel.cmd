@@ -105,56 +105,6 @@ part create rigid_body mass_properties  &
 part attributes  &
    part_name = .MecanumWheel.ground  &
    name_visibility = off
-!
-!---------------------------------- Wheel1 -----------------------------------!
-!
-!
-defaults coordinate_system  &
-   default_coordinate_system = .MecanumWheel.ground
-!
-part create rigid_body name_and_position  &
-   part_name = .MecanumWheel.Wheel1  &
-   adams_id = 2  &
-   location = 0.0, 0.0, 0.0  &
-   orientation = 0.0d, 0.0d, 0.0d
-!
-defaults coordinate_system  &
-   default_coordinate_system = .MecanumWheel.Wheel1
-!
-! ****** Markers for current part ******
-!
-marker create  &
-   marker_name = .MecanumWheel.Wheel1.PSMAR  &
-   adams_id = 1  &
-   location = 0.0, 0.0, 0.0  &
-   orientation = 0.0d, 0.0d, 0.0d
-!
-marker attributes  &
-   marker_name = .MecanumWheel.Wheel1.PSMAR  &
-   visibility = off
-!
-marker create  &
-   marker_name = .MecanumWheel.Wheel1.cm  &
-   adams_id = 2  &
-   location = 0.0, 0.5, 0.0  &
-   orientation = -4.9728955845E-011d, -45.0d, -7.0327363798E-011d
-!
-marker create  &
-   marker_name = .MecanumWheel.Wheel1.MARKER_26  &
-   adams_id = 26  &
-   location = 0.0, 0.5, 0.0  &
-   orientation = -180.0d, 45.0d, 180.0d
-!
-part create rigid_body mass_properties  &
-   part_name = .MecanumWheel.Wheel1  &
-   material_type = .MecanumWheel.rubber_belt
-!
-! ****** Graphics for current part ******
-!
-part attributes  &
-   part_name = .MecanumWheel.Wheel1  &
-   color = BLACK
-!
 !----------------------------------- Wheel9 -----------------------------------!
 !
 !
@@ -546,6 +496,56 @@ part create rigid_body mass_properties  &
 part attributes  &
    part_name = .MecanumWheel.Wheel2  &
    color = BLACK
+!
+!---------------------------------- Wheel1 -----------------------------------!
+!
+!
+defaults coordinate_system  &
+   default_coordinate_system = .MecanumWheel.ground
+!
+part create rigid_body name_and_position  &
+   part_name = .MecanumWheel.Wheel1  &
+   adams_id = 2  &
+   location = 0.0, 0.0, 0.0  &
+   orientation = 0.0d, 0.0d, 0.0d
+!
+defaults coordinate_system  &
+   default_coordinate_system = .MecanumWheel.Wheel1
+!
+! ****** Markers for current part ******
+!
+marker create  &
+   marker_name = .MecanumWheel.Wheel1.PSMAR  &
+   adams_id = 1  &
+   location = 0.0, 0.0, 0.0  &
+   orientation = 0.0d, 0.0d, 0.0d
+!
+marker attributes  &
+   marker_name = .MecanumWheel.Wheel1.PSMAR  &
+   visibility = off
+!
+marker create  &
+   marker_name = .MecanumWheel.Wheel1.cm  &
+   adams_id = 2  &
+   location = 0.0, 0.5, 0.0  &
+   orientation = -4.9728955845E-011d, -45.0d, -7.0327363798E-011d
+!
+marker create  &
+   marker_name = .MecanumWheel.Wheel1.MARKER_26  &
+   adams_id = 26  &
+   location = 0.0, 0.5, 0.0  &
+   orientation = -180.0d, 45.0d, 180.0d
+!
+part create rigid_body mass_properties  &
+   part_name = .MecanumWheel.Wheel1  &
+   material_type = .MecanumWheel.rubber_belt
+!
+! ****** Graphics for current part ******
+!
+part attributes  &
+   part_name = .MecanumWheel.Wheel1  &
+   color = BLACK
+!
 !
 !--------------------------------- MainWheel ----------------------------------!
 !

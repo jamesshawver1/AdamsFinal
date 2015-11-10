@@ -707,35 +707,35 @@ file parasolid read  &
    model_name = .MecanumWheel
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel9.SOLID2  &
+   geometry_name = .MecanumWheel.Wheel9.SOLID9  &
    color = NO_COLOR
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel8.SOLID3  &
+   geometry_name = .MecanumWheel.Wheel8.SOLID8  &
    color = NO_COLOR
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel7.SOLID4  &
+   geometry_name = .MecanumWheel.Wheel7.SOLID7  &
    color = NO_COLOR
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel6.SOLID5  &
+   geometry_name = .MecanumWheel.Wheel6.SOLID6  &
    color = NO_COLOR
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel5.SOLID6  &
+   geometry_name = .MecanumWheel.Wheel5.SOLID5  &
    color = NO_COLOR
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel4.SOLID7  &
+   geometry_name = .MecanumWheel.Wheel4.SOLID4  &
    color = NO_COLOR
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel3.SOLID8  &
+   geometry_name = .MecanumWheel.Wheel3.SOLID3  &
    color = NO_COLOR
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel2.SOLID9  &
+   geometry_name = .MecanumWheel.Wheel2.SOLID2  &
    color = NO_COLOR
 !
 geometry attributes  &

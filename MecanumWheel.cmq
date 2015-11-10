@@ -707,42 +707,6 @@ file parasolid read  &
    model_name = .MecanumWheel
 !
 geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel9.SOLID2  &
-   color = NO_COLOR
-!
-geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel8.SOLID3  &
-   color = NO_COLOR
-!
-geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel7.SOLID4  &
-   color = NO_COLOR
-!
-geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel6.SOLID5  &
-   color = NO_COLOR
-!
-geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel5.SOLID6  &
-   color = NO_COLOR
-!
-geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel4.SOLID7  &
-   color = NO_COLOR
-!
-geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel3.SOLID8  &
-   color = NO_COLOR
-!
-geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel2.SOLID9  &
-   color = NO_COLOR
-!
-geometry attributes  &
-   geometry_name = .MecanumWheel.Wheel1.SOLID1  &
-   color = NO_COLOR
-!
-geometry attributes  &
    geometry_name = .MecanumWheel.MainWheel.SOLID10  &
    color = COLOR_R170G178B195
 !
@@ -764,12 +728,11 @@ contact create  &
    stiction_transition_velocity = 4.0  &
    friction_transition_velocity = 40.0
 !
-!
 contact create  &
    contact_name = .MecanumWheel.FloorCWheel2  &
-   adams_id = 1  &
+   adams_id = 2  &
    i_geometry_name = .MecanumWheel.Floor.BOX_21  &
-   j_geometry_name = .MecanumWheel.Wheel1.SOLID1  &
+   j_geometry_name = .MecanumWheel.Wheel2.SOLID9  &
    stiffness = 5.7101471547E+005  &
    damping = 57.1014715473  &
    exponent = 2.2  &
@@ -779,13 +742,12 @@ contact create  &
    mu_dynamic = 0.1  &
    stiction_transition_velocity = 4.0  &
    friction_transition_velocity = 40.0
-!
 !
 contact create  &
    contact_name = .MecanumWheel.FloorCWheel3  &
-   adams_id = 1  &
+   adams_id = 3  &
    i_geometry_name = .MecanumWheel.Floor.BOX_21  &
-   j_geometry_name = .MecanumWheel.Wheel1.SOLID1  &
+   j_geometry_name = .MecanumWheel.Wheel3.SOLID8  &
    stiffness = 5.7101471547E+005  &
    damping = 57.1014715473  &
    exponent = 2.2  &
@@ -795,13 +757,12 @@ contact create  &
    mu_dynamic = 0.1  &
    stiction_transition_velocity = 4.0  &
    friction_transition_velocity = 40.0
-!
 !
 contact create  &
    contact_name = .MecanumWheel.FloorCWheel4  &
-   adams_id = 1  &
+   adams_id = 4  &
    i_geometry_name = .MecanumWheel.Floor.BOX_21  &
-   j_geometry_name = .MecanumWheel.Wheel1.SOLID1  &
+   j_geometry_name = .MecanumWheel.Wheel4.SOLID7  &
    stiffness = 5.7101471547E+005  &
    damping = 57.1014715473  &
    exponent = 2.2  &
@@ -811,13 +772,12 @@ contact create  &
    mu_dynamic = 0.1  &
    stiction_transition_velocity = 4.0  &
    friction_transition_velocity = 40.0
-!
 !
 contact create  &
    contact_name = .MecanumWheel.FloorCWheel5  &
-   adams_id = 1  &
+   adams_id = 5  &
    i_geometry_name = .MecanumWheel.Floor.BOX_21  &
-   j_geometry_name = .MecanumWheel.Wheel1.SOLID1  &
+   j_geometry_name = .MecanumWheel.Wheel5.SOLID6  &
    stiffness = 5.7101471547E+005  &
    damping = 57.1014715473  &
    exponent = 2.2  &
@@ -827,13 +787,12 @@ contact create  &
    mu_dynamic = 0.1  &
    stiction_transition_velocity = 4.0  &
    friction_transition_velocity = 40.0
-!
 !
 contact create  &
    contact_name = .MecanumWheel.FloorCWheel6  &
-   adams_id = 1  &
+   adams_id = 6  &
    i_geometry_name = .MecanumWheel.Floor.BOX_21  &
-   j_geometry_name = .MecanumWheel.Wheel1.SOLID1  &
+   j_geometry_name = .MecanumWheel.Wheel6.SOLID5  &
    stiffness = 5.7101471547E+005  &
    damping = 57.1014715473  &
    exponent = 2.2  &
@@ -843,13 +802,12 @@ contact create  &
    mu_dynamic = 0.1  &
    stiction_transition_velocity = 4.0  &
    friction_transition_velocity = 40.0
-!
 !
 contact create  &
    contact_name = .MecanumWheel.FloorCWheel7  &
-   adams_id = 1  &
+   adams_id = 7  &
    i_geometry_name = .MecanumWheel.Floor.BOX_21  &
-   j_geometry_name = .MecanumWheel.Wheel1.SOLID1  &
+   j_geometry_name = .MecanumWheel.Wheel7.SOLID4  &
    stiffness = 5.7101471547E+005  &
    damping = 57.1014715473  &
    exponent = 2.2  &
@@ -859,13 +817,12 @@ contact create  &
    mu_dynamic = 0.1  &
    stiction_transition_velocity = 4.0  &
    friction_transition_velocity = 40.0
-!
 !
 contact create  &
    contact_name = .MecanumWheel.FloorCWheel8  &
-   adams_id = 1  &
+   adams_id = 8  &
    i_geometry_name = .MecanumWheel.Floor.BOX_21  &
-   j_geometry_name = .MecanumWheel.Wheel1.SOLID1  &
+   j_geometry_name = .MecanumWheel.Wheel8.SOLID3  &
    stiffness = 5.7101471547E+005  &
    damping = 57.1014715473  &
    exponent = 2.2  &
@@ -876,12 +833,11 @@ contact create  &
    stiction_transition_velocity = 4.0  &
    friction_transition_velocity = 40.0
 !
-!
 contact create  &
    contact_name = .MecanumWheel.FloorCWheel9  &
-   adams_id = 1  &
+   adams_id = 9  &
    i_geometry_name = .MecanumWheel.Floor.BOX_21  &
-   j_geometry_name = .MecanumWheel.Wheel1.SOLID1  &
+   j_geometry_name = .MecanumWheel.Wheel9.SOLID2  &
    stiffness = 5.7101471547E+005  &
    damping = 57.1014715473  &
    exponent = 2.2  &
@@ -1014,7 +970,7 @@ constraint attributes  &
 simulation script create  &
    sim_script_name = .MecanumWheel.Last_Sim  &
    commands =   &
-              "simulation single_run transient type=auto_select initial_static=no end_time=1.0 number_of_steps=50 model_name=.MecanumWheel"
+              "simulation single_run transient type=auto_select initial_static=no end_time=0.5 number_of_steps=50 model_name=.MecanumWheel"
 !
 !------------------------------ Dynamic Graphics ------------------------------!
 !
@@ -1030,6 +986,86 @@ geometry create shape gcontact  &
 !
 geometry attributes  &
    geometry_name = .MecanumWheel.GCONTACT_35  &
+   color = RED
+!
+geometry create shape gcontact  &
+   contact_force_name = .MecanumWheel.GCONTACT_38  &
+   adams_id = 38  &
+   contact_element_name = .MecanumWheel.FloorCWheel2  &
+   force_display = components
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.GCONTACT_38  &
+   color = RED
+!
+geometry create shape gcontact  &
+   contact_force_name = .MecanumWheel.GCONTACT_39  &
+   adams_id = 39  &
+   contact_element_name = .MecanumWheel.FloorCWheel3  &
+   force_display = components
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.GCONTACT_39  &
+   color = RED
+!
+geometry create shape gcontact  &
+   contact_force_name = .MecanumWheel.GCONTACT_40  &
+   adams_id = 40  &
+   contact_element_name = .MecanumWheel.FloorCWheel4  &
+   force_display = components
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.GCONTACT_40  &
+   color = RED
+!
+geometry create shape gcontact  &
+   contact_force_name = .MecanumWheel.GCONTACT_41  &
+   adams_id = 41  &
+   contact_element_name = .MecanumWheel.FloorCWheel5  &
+   force_display = components
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.GCONTACT_41  &
+   color = RED
+!
+geometry create shape gcontact  &
+   contact_force_name = .MecanumWheel.GCONTACT_42  &
+   adams_id = 42  &
+   contact_element_name = .MecanumWheel.FloorCWheel6  &
+   force_display = components
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.GCONTACT_42  &
+   color = RED
+!
+geometry create shape gcontact  &
+   contact_force_name = .MecanumWheel.GCONTACT_43  &
+   adams_id = 43  &
+   contact_element_name = .MecanumWheel.FloorCWheel7  &
+   force_display = components
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.GCONTACT_43  &
+   color = RED
+!
+geometry create shape gcontact  &
+   contact_force_name = .MecanumWheel.GCONTACT_44  &
+   adams_id = 44  &
+   contact_element_name = .MecanumWheel.FloorCWheel8  &
+   force_display = components
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.GCONTACT_44  &
+   color = RED
+!
+geometry create shape gcontact  &
+   contact_force_name = .MecanumWheel.GCONTACT_45  &
+   adams_id = 45  &
+   contact_element_name = .MecanumWheel.FloorCWheel9  &
+   force_display = components
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.GCONTACT_45  &
    color = RED
 !
 !---------------------------------- Accgrav -----------------------------------!
@@ -1172,6 +1208,94 @@ geometry modify shape block  &
 !
 contact modify  &
    contact_name = .MecanumWheel.FloorCWheel1  &
+   stiffness = (.MecanumWheel.wheel_stiffness)  &
+   damping = (.MecanumWheel.wheel_damping)  &
+   exponent = (.MecanumWheel.wheel_force_exponent)  &
+   dmax = (.MecanumWheel.wheel_penetration_depth)  &
+   mu_static = (.MecanumWheel.wheel_sfriction)  &
+   mu_dynamic = (.MecanumWheel.wheel_dfriction)  &
+   stiction_transition_velocity = (.MecanumWheel.wheel_sfriction_vel)  &
+   friction_transition_velocity = (.MecanumWheel.wheel_dfriction_vel)
+!
+contact modify  &
+   contact_name = .MecanumWheel.FloorCWheel2  &
+   stiffness = (.MecanumWheel.wheel_stiffness)  &
+   damping = (.MecanumWheel.wheel_damping)  &
+   exponent = (.MecanumWheel.wheel_force_exponent)  &
+   dmax = (.MecanumWheel.wheel_penetration_depth)  &
+   mu_static = (.MecanumWheel.wheel_sfriction)  &
+   mu_dynamic = (.MecanumWheel.wheel_dfriction)  &
+   stiction_transition_velocity = (.MecanumWheel.wheel_sfriction_vel)  &
+   friction_transition_velocity = (.MecanumWheel.wheel_dfriction_vel)
+!
+contact modify  &
+   contact_name = .MecanumWheel.FloorCWheel3  &
+   stiffness = (.MecanumWheel.wheel_stiffness)  &
+   damping = (.MecanumWheel.wheel_damping)  &
+   exponent = (.MecanumWheel.wheel_force_exponent)  &
+   dmax = (.MecanumWheel.wheel_penetration_depth)  &
+   mu_static = (.MecanumWheel.wheel_sfriction)  &
+   mu_dynamic = (.MecanumWheel.wheel_dfriction)  &
+   stiction_transition_velocity = (.MecanumWheel.wheel_sfriction_vel)  &
+   friction_transition_velocity = (.MecanumWheel.wheel_dfriction_vel)
+!
+contact modify  &
+   contact_name = .MecanumWheel.FloorCWheel4  &
+   stiffness = (.MecanumWheel.wheel_stiffness)  &
+   damping = (.MecanumWheel.wheel_damping)  &
+   exponent = (.MecanumWheel.wheel_force_exponent)  &
+   dmax = (.MecanumWheel.wheel_penetration_depth)  &
+   mu_static = (.MecanumWheel.wheel_sfriction)  &
+   mu_dynamic = (.MecanumWheel.wheel_dfriction)  &
+   stiction_transition_velocity = (.MecanumWheel.wheel_sfriction_vel)  &
+   friction_transition_velocity = (.MecanumWheel.wheel_dfriction_vel)
+!
+contact modify  &
+   contact_name = .MecanumWheel.FloorCWheel5  &
+   stiffness = (.MecanumWheel.wheel_stiffness)  &
+   damping = (.MecanumWheel.wheel_damping)  &
+   exponent = (.MecanumWheel.wheel_force_exponent)  &
+   dmax = (.MecanumWheel.wheel_penetration_depth)  &
+   mu_static = (.MecanumWheel.wheel_sfriction)  &
+   mu_dynamic = (.MecanumWheel.wheel_dfriction)  &
+   stiction_transition_velocity = (.MecanumWheel.wheel_sfriction_vel)  &
+   friction_transition_velocity = (.MecanumWheel.wheel_dfriction_vel)
+!
+contact modify  &
+   contact_name = .MecanumWheel.FloorCWheel6  &
+   stiffness = (.MecanumWheel.wheel_stiffness)  &
+   damping = (.MecanumWheel.wheel_damping)  &
+   exponent = (.MecanumWheel.wheel_force_exponent)  &
+   dmax = (.MecanumWheel.wheel_penetration_depth)  &
+   mu_static = (.MecanumWheel.wheel_sfriction)  &
+   mu_dynamic = (.MecanumWheel.wheel_dfriction)  &
+   stiction_transition_velocity = (.MecanumWheel.wheel_sfriction_vel)  &
+   friction_transition_velocity = (.MecanumWheel.wheel_dfriction_vel)
+!
+contact modify  &
+   contact_name = .MecanumWheel.FloorCWheel7  &
+   stiffness = (.MecanumWheel.wheel_stiffness)  &
+   damping = (.MecanumWheel.wheel_damping)  &
+   exponent = (.MecanumWheel.wheel_force_exponent)  &
+   dmax = (.MecanumWheel.wheel_penetration_depth)  &
+   mu_static = (.MecanumWheel.wheel_sfriction)  &
+   mu_dynamic = (.MecanumWheel.wheel_dfriction)  &
+   stiction_transition_velocity = (.MecanumWheel.wheel_sfriction_vel)  &
+   friction_transition_velocity = (.MecanumWheel.wheel_dfriction_vel)
+!
+contact modify  &
+   contact_name = .MecanumWheel.FloorCWheel8  &
+   stiffness = (.MecanumWheel.wheel_stiffness)  &
+   damping = (.MecanumWheel.wheel_damping)  &
+   exponent = (.MecanumWheel.wheel_force_exponent)  &
+   dmax = (.MecanumWheel.wheel_penetration_depth)  &
+   mu_static = (.MecanumWheel.wheel_sfriction)  &
+   mu_dynamic = (.MecanumWheel.wheel_dfriction)  &
+   stiction_transition_velocity = (.MecanumWheel.wheel_sfriction_vel)  &
+   friction_transition_velocity = (.MecanumWheel.wheel_dfriction_vel)
+!
+contact modify  &
+   contact_name = .MecanumWheel.FloorCWheel9  &
    stiffness = (.MecanumWheel.wheel_stiffness)  &
    damping = (.MecanumWheel.wheel_damping)  &
    exponent = (.MecanumWheel.wheel_force_exponent)  &

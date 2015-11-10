@@ -638,6 +638,12 @@ marker create  &
    location = 0.3213938202, 0.3830222084, -1.94341779E-008  &
    orientation = -32.7324072096d, -32.7977513311d, -19.197203615d
 !
+marker create  &
+   marker_name = .MecanumWheel.MainWheel.MARKER_47  &
+   adams_id = 47  &
+   location = 0.0, 0.0, 0.0  &
+   orientation = 0.0d, 0.0d, 0.0d
+!
 part create rigid_body mass_properties  &
    part_name = .MecanumWheel.MainWheel  &
    material_type = .MecanumWheel.aluminum
@@ -681,6 +687,12 @@ marker create  &
    marker_name = .MecanumWheel.Floor.MARKER_44  &
    adams_id = 44  &
    location = -1.0, -1.0, -1.0  &
+   orientation = 0.0d, 0.0d, 0.0d
+!
+marker create  &
+   marker_name = .MecanumWheel.Floor.MARKER_48  &
+   adams_id = 48  &
+   location = 0.0, 0.25, 0.0  &
    orientation = 0.0d, 0.0d, 0.0d
 !
 part create rigid_body mass_properties  &
@@ -959,6 +971,16 @@ constraint create joint fixed  &
 constraint attributes  &
    constraint_name = .MecanumWheel.Floor2Ground  &
    visibility = off  &
+   name_visibility = off
+!
+constraint create joint planar  &
+   joint_name = .MecanumWheel.JOINT_13  &
+   adams_id = 13  &
+   i_marker_name = .MecanumWheel.MainWheel.MARKER_47  &
+   j_marker_name = .MecanumWheel.Floor.MARKER_48
+!
+constraint attributes  &
+   constraint_name = .MecanumWheel.JOINT_13  &
    name_visibility = off
 !
 !----------------------------------- Forces -----------------------------------!

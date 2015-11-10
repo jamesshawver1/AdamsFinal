@@ -97,6 +97,12 @@ marker create  &
    location = 7.4663291266E-008, -2.5538383198E-007, 3.4981316609E-003  &
    orientation = 0.0d, 0.0d, 0.0d
 !
+marker create  &
+   marker_name = .MecanumWheel.ground.MARKER_45  &
+   adams_id = 45  &
+   location = -1.0, -1.25, -1.0  &
+   orientation = 0.0d, 0.0d, 0.0d
+!
 part create rigid_body mass_properties  &
    part_name = .MecanumWheel.ground  &
    material_type = .MecanumWheel.steel
@@ -653,48 +659,54 @@ part attributes  &
    part_name = .MecanumWheel.MainWheel  &
    color = COLOR_R170G178B195
 !
-!---------------------------------- PART_12 -----------------------------------!
+!----------------------------------- Floor ------------------------------------!
 !
 !
 defaults coordinate_system  &
    default_coordinate_system = .MecanumWheel.ground
 !
 part create rigid_body name_and_position  &
-   part_name = .MecanumWheel.PART_12  &
+   part_name = .MecanumWheel.Floor  &
    adams_id = 12  &
    location = 0.0, -0.25, 0.0  &
    orientation = 0.0d, 0.0d, 0.0d
 !
 defaults coordinate_system  &
-   default_coordinate_system = .MecanumWheel.PART_12
+   default_coordinate_system = .MecanumWheel.Floor
 !
 ! ****** Markers for current part ******
 !
 marker create  &
-   marker_name = .MecanumWheel.PART_12.MARKER_43  &
+   marker_name = .MecanumWheel.Floor.MARKER_43  &
    adams_id = 43  &
    location = -1.0, -1.0, -1.0  &
    orientation = 0.0d, 0.0d, 0.0d
 !
 marker create  &
-   marker_name = .MecanumWheel.PART_12.cm  &
+   marker_name = .MecanumWheel.Floor.cm  &
    location = -1.5748031496E-002, -0.8031496063, -1.5748031496E-002  &
    orientation = -180.0d, 0.0d, -90.0d
 !
+marker create  &
+   marker_name = .MecanumWheel.Floor.MARKER_44  &
+   adams_id = 44  &
+   location = -1.0, -1.0, -1.0  &
+   orientation = 0.0d, 0.0d, 0.0d
+!
 part create rigid_body mass_properties  &
-   part_name = .MecanumWheel.PART_12  &
+   part_name = .MecanumWheel.Floor  &
    material_type = .MecanumWheel.steel
 !
 ! ****** Graphics for current part ******
 !
 geometry create shape block  &
-   block_name = .MecanumWheel.PART_12.BOX_21  &
+   block_name = .MecanumWheel.Floor.BOX_21  &
    adams_id = 21  &
-   corner_marker = .MecanumWheel.PART_12.MARKER_43  &
+   corner_marker = .MecanumWheel.Floor.MARKER_43  &
    diag_corner_coords = 1.968503937, 0.3937007874, 1.968503937
 !
 part attributes  &
-   part_name = .MecanumWheel.PART_12  &
+   part_name = .MecanumWheel.Floor  &
    color = RED  &
    name_visibility = off
 !
@@ -703,6 +715,42 @@ part attributes  &
 file parasolid read  &
    file_name = "MecanumWheel.xmt_txt"  &
    model_name = .MecanumWheel
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.Wheel9.SOLID2  &
+   color = NO_COLOR
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.Wheel8.SOLID3  &
+   color = NO_COLOR
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.Wheel7.SOLID4  &
+   color = NO_COLOR
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.Wheel6.SOLID5  &
+   color = NO_COLOR
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.Wheel5.SOLID6  &
+   color = NO_COLOR
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.Wheel4.SOLID7  &
+   color = NO_COLOR
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.Wheel3.SOLID8  &
+   color = NO_COLOR
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.Wheel2.SOLID9  &
+   color = NO_COLOR
+!
+geometry attributes  &
+   geometry_name = .MecanumWheel.Wheel1.SOLID1  &
+   color = NO_COLOR
 !
 geometry attributes  &
    geometry_name = .MecanumWheel.MainWheel.SOLID10  &
@@ -821,6 +869,17 @@ constraint attributes  &
    visibility = off  &
    name_visibility = off
 !
+constraint create joint fixed  &
+   joint_name = .MecanumWheel.Floor2Ground  &
+   adams_id = 12  &
+   i_marker_name = .MecanumWheel.Floor.MARKER_44  &
+   j_marker_name = .MecanumWheel.ground.MARKER_45
+!
+constraint attributes  &
+   constraint_name = .MecanumWheel.Floor2Ground  &
+   visibility = off  &
+   name_visibility = off
+!
 !----------------------------------- Forces -----------------------------------!
 !
 !
@@ -860,6 +919,11 @@ defaults coordinate_system  &
    default_coordinate_system = ground
 !
 material modify  &
+   material_name = .MecanumWheel.steel  &
+   density = (7801.0(kg/meter**3))  &
+   youngs_modulus = (2.07E+011(Newton/meter**2))
+!
+material modify  &
    material_name = .MecanumWheel.aluminum  &
    density = (2740.0(kg/meter**3))  &
    youngs_modulus = (7.1705E+010(Newton/meter**2))
@@ -892,16 +956,11 @@ defaults coordinate_system  &
    default_coordinate_system = .MecanumWheel.ground
 !
 geometry modify shape block  &
-   block_name = .MecanumWheel.PART_12.BOX_21  &
+   block_name = .MecanumWheel.Floor.BOX_21  &
    diag_corner_coords =   &
       (5.0cm),  &
       (1.0cm),  &
       (5.0cm)
-!
-material modify  &
-   material_name = .MecanumWheel.steel  &
-   density = (7801.0(kg/meter**3))  &
-   youngs_modulus = (2.07E+011(Newton/meter**2))
 !
 model display  &
    model_name = MecanumWheel
